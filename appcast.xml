@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">
+    <channel>
+        <title>SimDeck</title>
+        <description>SimDeck updates</description>
+        <language>en</language>
+        <item>
+            <title>Version 0.1.0</title>
+            <pubDate>Thu, 29 Oct 2026 15:11:22 +0000</pubDate>
+            <sparkle:version>202610292323</sparkle:version>
+            <sparkle:shortVersionString>0.1.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://github.com/7omat0/simdeck-releases/releases/download/v0.1.0/SimDeck-0.1.0.dmg" length="6417222" type="application/octet-stream" sparkle:edSignature="isga61WUGythkvWP7njxpDHx/V7DVWeYDkhQFoA/N6TXW3f4wmv6+Tli0vU0YMRf7WLiqsJ6T4yoRq4XcrfyAQ=="/>
+        </item>
+    </channel>
+</rss>
