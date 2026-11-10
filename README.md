@@ -10,7 +10,7 @@ This repository only hosts SimDeck releases (DMG files) and its update feed. The
 - **Location, privacy, status bar**: simulate a fixed location, a route, or a built-in scenario; grant, revoke, or reset privacy permissions; override the status bar (for example, the 9:41 preset).
 - **Capture**: save screenshots and screen recordings of a simulator.
 - **Design tools**: grid, rulers and guides, a magnifier with color picking, and a design image overlay to compare against the app.
-- **Network Monitor**: inspect HTTP requests from simulator apps you start with **Launch with Network Monitor** in the panel, or from apps you run from Xcode when **Connect apps run from Xcode** is on. Copy requests as cURL and export HAR files. With **Map Local**, answer a request with a JSON file on your Mac and switch between several versions of it.
+- **Network Monitor**: inspect HTTP requests from simulator apps you start with **Launch with Network Monitor** in the panel, or from apps you run from Xcode when **Connect apps run from Xcode** is on. Copy requests as cURL and export HAR files. With **Map Local**, answer a request with a JSON file on your Mac (a new one, or files you already keep in your project), switch between several versions with their own status codes, apply them to every server address or app, and add APIs the server does not have yet.
 - **Network profiles**: limit the network of selected simulator apps (Airplane Mode, 100% Packet Loss, 3G, Edge, LTE, Wi-Fi, DSL, Very Bad Network) without affecting your Mac or other apps.
 - **Command line tool**: the `simdeck` command runs the same actions from Terminal and scripts (`--json` for machine-readable output).
 - **Agent commands**: `simdeck ui` lets a coding agent such as Claude Code read the screen of the simulator app chosen in the panel and operate it: tap, type, swipe, scroll, wait, answer system alerts, press device buttons, rotate, switch appearance, and simulate Face ID. It works inside the simulator with an XCTest helper, so it does not move your mouse pointer or take keyboard focus on your Mac.
@@ -66,7 +66,7 @@ If you move SimDeck to the Trash without step 1, macOS still asks to remove the 
 - If another app (not the home screen) is in front of the chosen app, an agent command can wait until its time limit and fail with `helper_timed_out`. SimDeck then restarts the helper, and the next command works normally.
 - While breakpoints are deactivated in Xcode (⌘Y), apps run from Xcode do not connect to Network Monitor.
 - With **Connect apps run from Xcode**, requests an app makes right after it starts may not appear in Network Monitor.
-- Map Local changes URLSession requests only (including libraries built on it, such as Alamofire). Web views, background sessions, and sockets are not changed. Apps that were already running before you updated SimDeck must be launched again. The Map Local settings store full file paths, so they are not meant to be shared with other Macs.
+- Map Local changes URLSession requests only (including libraries built on it, such as Alamofire). Web views, background sessions, and sockets are not changed. Apps that were already running before you updated SimDeck must be launched again. The Map Local settings store full file paths, so they are not meant to be shared with other Macs. Map Local was checked with files in your Documents folder; the first time, macOS may ask whether the Simulator can access that folder.
 
 ## Privacy
 
