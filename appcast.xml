@@ -5,6 +5,14 @@
         <description>SimDeck updates</description>
         <language>en</language>
         <item>
+            <title>Version 0.4.1</title>
+            <pubDate>Thu, 12 Nov 2026 14:42:35 +0000</pubDate>
+            <sparkle:version>202611121839</sparkle:version>
+            <sparkle:shortVersionString>0.4.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://github.com/7omat0/simdeck-releases/releases/download/v0.4.1/SimDeck-0.4.1.dmg" length="9153950" type="application/octet-stream" sparkle:edSignature="g/Gs++j0eHOirLLoJ9mrVZXcpYtCMdaSjvNes+18Jy9otwLU59jGoPQBrCEP3SZOsOl4FnQpDbF5Uti3chl9Aw=="/>
+        </item>
+        <item>
             <title>Version 0.4.0</title>
             <pubDate>Tue, 10 Nov 2026 07:37:59 +0000</pubDate>
             <sparkle:version>202611101620</sparkle:version>
